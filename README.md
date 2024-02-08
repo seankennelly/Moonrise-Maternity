@@ -1,4 +1,4 @@
-![Moonrise Logo](./images/logos_decorations/moonrise_logo.png)
+![Moonrise Logo](./images/logos_decorations/moonrise_logo_small.png)
 # Moonrise Maternity
 
 ## Description

@@ -1,0 +1,1028 @@
+/* CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ----------------
+  1. PAGE STANDARDS
+  ----------------- */
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto !important;
+}
+
+/* -----------------
+  2. NAVBAR & FOOTER 
+  ------------------*/
+/* Bootstrap Nav breakpoint 992px */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #4F4167;
+  color: #FFE184;
+  font-size: calc(1rem + 0.5vw);
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  line-height: calc(0.8rem + 0.5vw);
+}
+
+.navbar a,
+.navbar a:hover,
+.navbar a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar-brand {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: calc(1.15rem + 0.5vw);
+  filter: drop-shadow(1px 1px 0px #000000);
+}
+
+#toggler {
+  border: 2px solid #685369;
+}
+
+.navbar-nav {
+  /* Collapsing nav options */
+  padding-left: 1rem;
+}
+
+.navbar .dropdown-menu {
+  background-color: white;
+  font-size: calc(0.8rem + 0.5vw);
+  z-index: 1;
+}
+
+@media (min-width: 992px) {
+
+  /* NAV ANCHOR HOVER EFFECT */
+  .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 85%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 7.5%;
+    background-color: #685369;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  /* END HOVER EFFECT */
+}
+
+/* NAV ACTIVE EFFECT */
+/* .active {
+  color: green;
+  text-decoration: underline;
+} */
+
+@media (min-width: 1150px) {
+  .navbar-nav
+
+  /* UL */
+    {
+    width: 85%;
+  }
+}
+
+
+/* FOOTER */
+.footer {
+  background-color: #605f5f;
+  color: white;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.footer .small-outer {
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+/* Delete this when changed from img logo to text */
+.footer .footer-logo {
+  width: 100%;
+  max-width: 220px;
+}
+
+.footer h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: calc(1.15rem + 0.5vw);
+  color: #FFE184;
+  filter: drop-shadow(1px 1px 0px #000000);
+}
+
+.footer .small-inner {
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+.footer .small-inner .col-12:first-child {
+  /* Uppercase for 'contact' */
+  text-transform: uppercase;
+}
+
+.footer .greengeeks-seal {
+  max-width: 60px;
+  margin: 0 0.5rem;
+}
+
+.footer .dbs-logo {
+  max-width: 60px;
+  margin: 0 0.5rem;
+}
+
+.footer .large-outer .dbs-logo {
+  max-width: 90px;
+}
+
+.footer small {
+  font-size: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .footer .large-outer {
+    max-width: 720px;
+    margin: 0 auto 0;
+  }
+}
+
+/* ----------
+  3. PAGE CONTENT
+  ----------- */
+main {
+  margin: 0 auto;
+  padding-top: 0;
+  text-align: center;
+  font-size: calc(0.9rem + 0.2vw);
+  line-height: 1.5rem;
+}
+
+.link-anchor {
+  /* To offset incorrect scroll position with nav links */
+  scroll-margin-top: 395px;
+}
+
+@media(min-width: 992px) {
+  .link-anchor {
+    scroll-margin-top: 130px;
+  }
+}
+
+section {
+  margin: 0 auto 2rem;
+}
+
+.section-break img {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 0;
+}
+
+.section-break,
+.section-break img {
+  display: block;
+  overflow: visible;
+}
+
+.break-end {
+  height: calc(31px + 0.5vw);
+  z-index: 9998;
+}
+
+.break-end img {
+  display: block;
+  position: relative;
+  top: -7px;
+  width: 100%;
+  height: calc(20px + 0.5vw);
+}
+
+.h2-container {
+  position: sticky;
+  top: calc(3.5rem + 0.25vw);
+  margin-bottom: 1rem;
+  background-color: #F8F9FA;
+  z-index: 9997;
+}
+
+/* Corrections for sticky container below with other screen sizes */
+
+h2 {
+  width: 100%;
+  padding: 0.65em 0 0.65em;
+  font-family: 'Raleway', sans-serif;
+  font-size: calc(1.1rem + 0.5vw);
+  line-height: 1.5rem;
+  color: #685369;
+  /* font-style: italic; */
+}
+
+main p {
+  padding: 1rem;
+}
+
+.emphasis {
+  font-weight: 500;
+  color: #685369;
+}
+
+.quote {
+  width: 80%;
+  margin: 0 auto 0;
+  padding: 0.9rem;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: calc(1.4em + 0.2vw);
+  line-height: 2.5rem;
+  font-style: italic;
+  color: #685369;
+}
+
+.italics {
+  font-style: italic;
+}
+
+/* Corrections for gap that appears between sticky heading and nav due to increasing nav height (due to responsive font */
+@media (min-width: 940px) {
+  .h2-container {
+    top: calc(3.4rem + 0.1vw);
+  }
+}
+
+@media (min-width: 992px) {
+  .h2-container {
+    top: calc(3rem + 0.1vw);
+  }
+}
+
+/* End sticky gap corrections */
+
+@media(min-width: 1024px) {
+  main {
+    /* width: 90%; */
+    margin-bottom: 2rem;
+  }
+
+  main p {
+    padding-top: calc(1rem + 0.5vw);
+    padding-bottom: calc(1rem + 0.5vw);
+  }
+}
+
+@media(min-width: 1440px) {
+  main {
+    margin: 0 auto 3rem;
+  }
+
+  section {
+    width: 85%;
+  }
+}
+
+/* ----------
+  4. HOMEPAGE
+  ----------- */
+
+.home .introduction {
+  width: 100%;
+  margin-bottom: 0;
+  padding: 3rem 1rem;
+  background-color: rgb(194, 170, 194, 0.5);
+}
+
+.home .introduction .container {
+  max-width: 1000px;
+}
+
+.home .introduction .image-col {
+  overflow: hidden;
+}
+
+.home .introduction img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 0;
+}
+
+.home .overlay-container {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.home .overlay-container p {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.home .introduction h2 {
+  margin-top: 1.5rem;
+  padding: 0;
+  font-size: calc(1.1rem + 1vw);
+  line-height: calc(1.1rem + 2vw);
+}
+
+.home .introduction h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: calc(0.8rem + 0.5vw);
+}
+
+@media(min-width: 768px) {
+  .home .introduction h3 {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.home .introduction ul {
+  margin: 1.5rem 0;
+}
+
+.home .introduction ul li {
+  margin: 0.4rem 0;
+  font-size: calc(0.9rem + 0.5vw);
+  line-height: calc(1rem + 1vw);
+}
+
+.home .break-end {
+  height: calc(13px + 0.5vw);
+}
+
+#landing-img {
+  width: 100%;
+}
+
+/* ---------------
+  5. MY PHILOSOPHY
+ ----------------*/
+.philosophy {
+  padding: 0;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+.philosophy .h2-container {
+  background-color: #FAE5CA;
+}
+
+/* ----------------------
+  6. THE CASE FOR CUDDLES
+ -----------------------*/
+.cuddles ul {
+  margin: -0.5rem auto 1rem;
+}
+
+.cuddles li {
+  padding: 0.5rem 0;
+  font-style: italic;
+}
+
+.cuddles .middle-section {
+  /* Image and quote in middle of section */
+  width: 90%;
+  margin: 1rem auto 0rem;
+  text-align: center;
+}
+
+.cuddles .middle-section img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.cuddles .middle-section .quote {
+  width: 100%;
+  margin: 1rem 0 0 0;
+  font-size: calc(1.5em + 0.5vw);
+  line-height: calc(2rem + 1vw);
+}
+
+.cuddles .subsection {
+  margin: 1.5rem auto;
+  padding: 1rem calc(0.25rem + 1vw);
+  background-color: #e5e5e5;
+}
+
+.cuddles .subsection .quote {
+  width: 100%;
+  margin-top: 1rem;
+  font-size: calc(1.5em + 0.2vw);
+}
+
+@media(min-width: 992px) {
+  .cuddles .subsection {
+    padding: 1rem 1.5rem;
+  }
+
+  .cuddles .subsection .col-lg-4 {
+    /* Selects left column */
+    padding-right: 0;
+  }
+}
+
+/* ----------
+  7. ABOUT ME 
+ ------------*/
+.about .h2-container {
+  background-color: #FAE5CA;
+}
+
+.about {
+  padding: 0;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+.about .top-section {
+  margin-top: 2rem;
+}
+
+.about .top-section img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.about .top-section .quote {
+  width: 100%;
+  margin: 1rem 0 0 0;
+  line-height: calc(2rem + 1vw);
+}
+
+.about .video-section {
+  margin: 1.5rem 0;
+  padding: 1.5rem 0 1.5rem;
+  background-color: #FBE5CB;
+  text-align: center;
+}
+
+.about .video-section img {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 0;
+}
+
+.about .video-section p {
+  max-width: 960px;
+  margin: 0 auto 0;
+}
+
+.about iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 165px;
+}
+
+.about .video-section a {
+  text-decoration: underline;
+  color: #4F4167;
+}
+
+@media(min-width: 375px) {
+  .about iframe {
+    height: 196px;
+  }
+}
+
+@media(min-width: 425px) {
+  .about iframe {
+    height: 224px;
+  }
+}
+
+@media(min-width: 584px) {
+  .about iframe {
+    height: 314px;
+  }
+}
+
+@media(min-width: 992px) {
+  .about iframe {
+    max-width: 700px;
+    height: 392px;
+  }
+}
+
+.about .qualifications-section {
+  padding: 1rem calc(0.5rem + 0.5vw);
+  background-color: #F8F9FA;
+}
+
+@media(min-width: 768px) {
+  .about .qualifications-section {
+    width: 85%;
+    margin: 1.5rem auto;
+  }
+}
+
+@media(min-width: 992px) {
+  .about .qualifications-section {
+    width: 95%;
+    margin: 1.5rem auto;
+  }
+}
+
+.about .qualifications-section p,
+.about .qualifications-section ul {
+  width: 100%;
+}
+
+.about li {
+  padding: 0.5rem 0;
+}
+
+.about .qualifications-section hr {
+  width: 50%;
+  margin: 0.25rem auto;
+  color: lightgrey;
+}
+
+.about .qualifications-section img {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+}
+
+
+
+/* ----------
+  8. SERVICES
+ ------------*/
+h3 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: calc(1.25rem + 0.5vw);
+  font-weight: 500;
+  color: #685369;
+}
+
+.services .descriptor {
+  width: 100%;
+  margin: 0.5rem auto 0.5rem;
+  padding: 0.9rem;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: calc(1.3em + 0.2vw);
+  line-height: 2rem;
+  color: #685369;
+}
+
+.services #travel .descriptor:last-child {
+  padding-top: 0;
+}
+
+h4 {
+  font-weight: 500;
+}
+
+.prices {
+  display: block;
+  font-weight: 500;
+  color: #685369;
+  font-style: italic;
+}
+
+.services .accordion-item:active {
+  z-index: 0;
+}
+
+.services .accordion-button {
+  background-color: #9b7b9c;
+  color: whitesmoke;
+}
+
+/* Changes colour of accordian arrow to white */
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+/* Changes colour of active accordian arrow to white */
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.services .accordion p {
+  padding: 0.5rem 0;
+}
+
+.services ul {
+  list-style: none;
+  /* Remove default bullets for below */
+}
+
+/* Changes bullet colour but not text */
+.services ul li::before {
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #685369;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1.5em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
+}
+
+.services hr {
+  width: 80%;
+  height: 2px;
+  margin: 3rem auto 3rem;
+  color: #4F4167;
+}
+
+
+/* --------------
+  9. TESTIMONIALS
+ ---------------*/
+.card-container {
+  margin: 1rem 0;
+}
+
+.card-header {
+  background-color: #9b7b9c;
+}
+
+.card-body {
+  padding: 0 1rem 0;
+}
+
+blockquote {
+  font-size: calc(0.9rem + 0.2vw);
+  font-family: 'Lemonada', cursive;
+  line-height: 1.5rem;
+}
+
+blockquote p {
+  padding: 0.5rem;
+}
+
+blockquote .quote-start,
+blockquote .quote-end {
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 3em;
+  color: lightgray;
+  padding: 0;
+}
+
+blockquote .quote-start {
+  display: flex;
+  justify-content: left;
+  padding-bottom: 0.5rem;
+}
+
+blockquote .quote-end {
+  display: flex;
+  justify-content: right;
+  padding-top: 0.5rem;
+}
+
+@media(min-width: 992px) {
+  .card {
+    flex-direction: row;
+  }
+
+  .card-header {
+    padding: 0.5rem;
+  }
+
+  /* .hide-large hidden at this size (class code in Page Standards */
+}
+
+/* CAROUSEL */
+/*, .carousel-indicators */
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 1.5rem;
+  background-color: #4F4167;
+  border-radius: 50%;
+}
+
+/* ----------
+  10. CONTACT
+ ------------*/
+.contact .link-anchor {
+  /* To offset incorrect scroll position with nav links */
+  scroll-margin-top: 55px;
+}
+
+.contact .box-left,
+.contact .box-right {
+  padding: 2rem 2rem 2rem;
+}
+
+.contact .box-left {
+  background-color: #F8F9FA;
+  font-size: 1.4em;
+}
+
+.contact .box-left li {
+  padding: 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: calc(1.2rem + 0.5vw);
+  line-height: calc(1.5rem + 0.5vw);
+  font-weight: 300;
+}
+
+.contact h2 {
+  font-size: calc(2rem + 0.5vw) !important;
+}
+
+.contact .box-right,
+.contact .box-right h2 {
+  background-color: #4E3F67;
+  color: whitesmoke;
+}
+
+.contact .box-right p {
+  padding: 1rem 0;
+}
+
+.contact .box-right ul {
+  margin-top: 0.5rem;
+  padding: 1rem;
+  background-color: #F8F9FA;
+  color: #4E3F67;
+  font-size: 1.2em;
+  border-radius: 10px;
+}
+
+.hide-small {
+  display: none;
+}
+
+@media(min-width: 992px) {
+  .hide-large {
+    display: none;
+  }
+
+  .hide-small {
+    display: inline-block;
+  }
+
+  .contact .overlay-container {
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .contact .overlay-container img {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .contact .overlay-container ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.6);
+  }
+
+  .contact .overlay-container li {
+    padding: 1rem 0;
+  }
+
+  /* .contact .box-right div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    justify-content: center;
+  } */
+}
+
+@media(min-width: 1200px) {
+  .contact .box-right p {
+    padding: 1.5rem 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------
+  11. FLOATING CONTACT BUTTON
+ ---------------------------*/
+#contact-button {
+  display: inline-block;
+  z-index: 2;
+  position: fixed;
+  bottom: 2vh;
+  right: 2vw;
+  width: 40px;
+  padding: 8px 8px;
+  background-color: #685369;
+  font-size: 1rem;
+  border-radius: 30px;
+  text-align: center;
+  transition: background-color 0.4s;
+  z-index: 9998;
+}
+
+#contact-button:hover {
+  background-color: #9b7b9c;
+  border: #4F4167 1px solid;
+  padding: 7px 7px;
+}
+
+#contact-button i {
+  display: inline-block;
+  color: #F8F9FA;
+}
+
+#contact-button h2 {
+  display: none;
+  color: #F8F9FA;
+  font-size: 1.5rem;
+  font-style: normal;
+}
+
+@media(min-width: 768px) {
+  #contact-button {
+    width: 56px;
+    padding: 16px 16px;
+    font-size: 1.3rem;
+  }
+
+  #contact-button:hover {
+    padding: 15px 15px;
+
+  }
+}
+
+@media(min-width: 992px) {
+  #contact-button {
+    width: 130px;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+  }
+
+  #contact-button h2 {
+    display: inline;
+    font-size: 1.1rem;
+  }
+
+  #contact-button i {
+    margin-right: 5px;
+  }
+}

@@ -2,8 +2,6 @@
 # Moonrise Maternity
 * Live Site can be found here:
   www.moonrisematernity.com
-* Git Page can be viewed here:
-  https://seankennelly.github.io/Moonrise-Maternity/
 
 ## Description
 This site was build according to client specifications, and using content produced by the client themselves. The key challenge of the site was to lay out a large amount of text content without bulky paragraphs. 

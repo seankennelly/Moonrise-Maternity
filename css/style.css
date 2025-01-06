@@ -126,7 +126,7 @@ a:hover {
   1. PAGE STANDARDS
   ----------------- */
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   width: 100%;
   max-width: 2000px;
@@ -142,10 +142,10 @@ body {
   position: sticky;
   top: 0;
   z-index: 9999;
-  background-color: #4F4167;
-  color: #FFE184;
+  background-color: #4f4167;
+  color: #ffe184;
   font-size: calc(1rem + 0.5vw);
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   line-height: calc(0.8rem + 0.5vw);
 }
 
@@ -157,7 +157,7 @@ body {
 }
 
 .navbar-brand {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: calc(1.15rem + 0.5vw);
   filter: drop-shadow(1px 1px 0px #000000);
@@ -179,7 +179,6 @@ body {
 }
 
 @media (min-width: 992px) {
-
   /* NAV ANCHOR HOVER EFFECT */
   .hover-underline-animation {
     display: inline-block;
@@ -187,7 +186,7 @@ body {
   }
 
   .hover-underline-animation::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 85%;
     transform: scaleX(0);
@@ -216,18 +215,16 @@ body {
 @media (min-width: 1150px) {
   .navbar-nav
 
-  /* UL */
-    {
+  /* UL */ {
     width: 85%;
   }
 }
-
 
 /* FOOTER */
 .footer {
   background-color: #605f5f;
   color: white;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   letter-spacing: 0.1rem;
 }
 
@@ -245,10 +242,10 @@ body {
 }
 
 .footer h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: calc(1.15rem + 0.5vw);
-  color: #FFE184;
+  color: #ffe184;
   filter: drop-shadow(1px 1px 0px #000000);
 }
 
@@ -303,7 +300,7 @@ main {
   scroll-margin-top: 395px;
 }
 
-@media(min-width: 992px) {
+@media (min-width: 992px) {
   .link-anchor {
     scroll-margin-top: 130px;
   }
@@ -343,7 +340,7 @@ section {
   position: sticky;
   top: calc(3.5rem + 0.25vw);
   margin-bottom: 1rem;
-  background-color: #F8F9FA;
+  background-color: #f8f9fa;
   z-index: 9997;
 }
 
@@ -352,7 +349,7 @@ section {
 h2 {
   width: 100%;
   padding: 0.65em 0 0.65em;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: calc(1.1rem + 0.5vw);
   line-height: 1.5rem;
   color: #685369;
@@ -372,7 +369,7 @@ main p {
   width: 80%;
   margin: 0 auto 0;
   padding: 0.9rem;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: calc(1.4em + 0.2vw);
   line-height: 2.5rem;
   font-style: italic;
@@ -398,7 +395,7 @@ main p {
 
 /* End sticky gap corrections */
 
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
   main {
     /* width: 90%; */
     margin-bottom: 2rem;
@@ -410,7 +407,7 @@ main p {
   }
 }
 
-@media(min-width: 1440px) {
+@media (min-width: 1440px) {
   main {
     margin: 0 auto 3rem;
   }
@@ -423,6 +420,17 @@ main p {
 /* ----------
   4. HOMEPAGE
   ----------- */
+
+.header {
+  /* height: 32px; */
+  background-color: #ffe184;
+  text-align: center;
+}
+
+.header p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 
 .home .introduction {
   width: 100%;
@@ -473,11 +481,12 @@ main p {
 }
 
 .home .introduction h3 {
-  font-family: 'Raleway', sans-serif;
-  font-size: calc(0.8rem + 0.5vw);
+  font-family: "Raleway", sans-serif;
+  font-size: calc(1rem + 0.5vw);
+  margin-top: 0.25rem;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .home .introduction h3 {
     width: 80%;
     margin: 0 auto;
@@ -489,8 +498,8 @@ main p {
 }
 
 .home .introduction ul li {
-  margin: 0.4rem 0;
-  font-size: calc(0.9rem + 0.5vw);
+  margin: 0.3rem 0;
+  font-size: calc(0.8rem + 0.5vw);
   line-height: calc(1rem + 1vw);
 }
 
@@ -508,16 +517,38 @@ main p {
 .philosophy {
   padding: 0;
   text-align: center;
-  background-color: antiquewhite;
+  background-color: #fbf2e6;
 }
 
 .philosophy .h2-container {
-  background-color: #FAE5CA;
+  background-color: #fae5ca;
 }
 
 /* ----------------------
   6. THE CASE FOR CUDDLES
  -----------------------*/
+.book-row {
+  background-color: #e0d5e0;
+}
+
+.book-carousel-img {
+  max-width: 500px;
+  margin: 0 auto 0;
+}
+
+.buy-book-btn {
+  color: white;
+  background-color: #4e3f67;
+  margin: 2rem auto;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+.buy-book-btn:hover {
+  color: #4e3f67;
+  background-color: #ffe184;
+}
+
 .cuddles ul {
   margin: -0.5rem auto 1rem;
 }
@@ -558,7 +589,7 @@ main p {
   font-size: calc(1.5em + 0.2vw);
 }
 
-@media(min-width: 992px) {
+@media (min-width: 992px) {
   .cuddles .subsection {
     padding: 1rem 1.5rem;
   }
@@ -573,13 +604,13 @@ main p {
   7. ABOUT ME 
  ------------*/
 .about .h2-container {
-  background-color: #FAE5CA;
+  background-color: #fae5ca;
 }
 
 .about {
   padding: 0;
   text-align: center;
-  background-color: antiquewhite;
+  background-color: #fbf2e6;
 }
 
 .about .top-section {
@@ -600,7 +631,7 @@ main p {
 .about .video-section {
   margin: 1.5rem 0;
   padding: 1.5rem 0 1.5rem;
-  background-color: #FBE5CB;
+  background-color: #fbe5cb;
   text-align: center;
 }
 
@@ -624,28 +655,28 @@ main p {
 
 .about .video-section a {
   text-decoration: underline;
-  color: #4F4167;
+  color: #4f4167;
 }
 
-@media(min-width: 375px) {
+@media (min-width: 375px) {
   .about iframe {
     height: 196px;
   }
 }
 
-@media(min-width: 425px) {
+@media (min-width: 425px) {
   .about iframe {
     height: 224px;
   }
 }
 
-@media(min-width: 584px) {
+@media (min-width: 584px) {
   .about iframe {
     height: 314px;
   }
 }
 
-@media(min-width: 992px) {
+@media (min-width: 992px) {
   .about iframe {
     max-width: 700px;
     height: 392px;
@@ -654,17 +685,17 @@ main p {
 
 .about .qualifications-section {
   padding: 1rem calc(0.5rem + 0.5vw);
-  background-color: #F8F9FA;
+  background-color: #f8f9fa;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .about .qualifications-section {
     width: 85%;
     margin: 1.5rem auto;
   }
 }
 
-@media(min-width: 992px) {
+@media (min-width: 992px) {
   .about .qualifications-section {
     width: 95%;
     margin: 1.5rem auto;
@@ -692,13 +723,11 @@ main p {
   max-width: 500px;
 }
 
-
-
 /* ----------
   8. SERVICES
  ------------*/
 h3 {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: calc(1.25rem + 0.5vw);
   font-weight: 500;
   color: #685369;
@@ -708,7 +737,7 @@ h3 {
   width: 100%;
   margin: 0.5rem auto 0.5rem;
   padding: 0.9rem;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: calc(1.3em + 0.2vw);
   line-height: 2rem;
   color: #685369;
@@ -777,9 +806,8 @@ h4 {
   width: 80%;
   height: 2px;
   margin: 3rem auto 3rem;
-  color: #4F4167;
+  color: #4f4167;
 }
-
 
 /* --------------
   9. TESTIMONIALS
@@ -798,7 +826,7 @@ h4 {
 
 blockquote {
   font-size: calc(0.9rem + 0.2vw);
-  font-family: 'Lemonada', cursive;
+  font-family: "Lemonada", cursive;
   line-height: 1.5rem;
 }
 
@@ -808,7 +836,7 @@ blockquote p {
 
 blockquote .quote-start,
 blockquote .quote-end {
-  font-family: 'Sorts Mill Goudy', serif;
+  font-family: "Sorts Mill Goudy", serif;
   font-size: 3em;
   color: lightgray;
   padding: 0;
@@ -826,7 +854,7 @@ blockquote .quote-end {
   padding-top: 0.5rem;
 }
 
-@media(min-width: 992px) {
+@media (min-width: 992px) {
   .card {
     flex-direction: row;
   }
@@ -845,7 +873,7 @@ blockquote .quote-end {
   width: 1.5rem;
   height: 1.5rem;
   padding: 1.5rem;
-  background-color: #4F4167;
+  background-color: #4f4167;
   border-radius: 50%;
 }
 
@@ -863,13 +891,13 @@ blockquote .quote-end {
 }
 
 .contact .box-left {
-  background-color: #F8F9FA;
+  background-color: #f8f9fa;
   font-size: 1.4em;
 }
 
 .contact .box-left li {
   padding: 1rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: calc(1.2rem + 0.5vw);
   line-height: calc(1.5rem + 0.5vw);
   font-weight: 300;
@@ -881,7 +909,7 @@ blockquote .quote-end {
 
 .contact .box-right,
 .contact .box-right h2 {
-  background-color: #4E3F67;
+  background-color: #4e3f67;
   color: whitesmoke;
 }
 
@@ -892,8 +920,8 @@ blockquote .quote-end {
 .contact .box-right ul {
   margin-top: 0.5rem;
   padding: 1rem;
-  background-color: #F8F9FA;
-  color: #4E3F67;
+  background-color: #f8f9fa;
+  color: #4e3f67;
   font-size: 1.2em;
   border-radius: 10px;
 }
@@ -902,7 +930,7 @@ blockquote .quote-end {
   display: none;
 }
 
-@media(min-width: 992px) {
+@media (min-width: 992px) {
   .hide-large {
     display: none;
   }
@@ -944,21 +972,11 @@ blockquote .quote-end {
   } */
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .contact .box-right p {
     padding: 1.5rem 0;
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 /* --------------------------
   11. FLOATING CONTACT BUTTON
@@ -981,23 +999,23 @@ blockquote .quote-end {
 
 #contact-button:hover {
   background-color: #9b7b9c;
-  border: #4F4167 1px solid;
+  border: #4f4167 1px solid;
   padding: 7px 7px;
 }
 
 #contact-button i {
   display: inline-block;
-  color: #F8F9FA;
+  color: #f8f9fa;
 }
 
 #contact-button h2 {
   display: none;
-  color: #F8F9FA;
+  color: #f8f9fa;
   font-size: 1.5rem;
   font-style: normal;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   #contact-button {
     width: 56px;
     padding: 16px 16px;
@@ -1006,11 +1024,10 @@ blockquote .quote-end {
 
   #contact-button:hover {
     padding: 15px 15px;
-
   }
 }
 
-@media(min-width: 992px) {
+@media (min-width: 992px) {
   #contact-button {
     width: 130px;
     padding: 1rem 1rem;
